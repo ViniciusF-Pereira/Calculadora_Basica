@@ -9,7 +9,9 @@ Sound__ocean.volume = 0.3;
 
 var on = false;
 
-
+function mar(){
+sound__ocean.play();
+}
 
 function power() {
     Sound__TurnOn.play();
