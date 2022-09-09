@@ -14,82 +14,86 @@
     <link href=https://fonts.googleapis.com/css?family=Orbitron rel=stylesheet type=text/css>
 
     <!-- Sounds-->
-    <audio id='Sound__TurnOn' src="./assets/sound/turnOn.wav" type="audio/wav" preload="auto"></audio>
-    <audio id='Sound__Press' src="./assets/sound/press.wav" type="audio/wav" preload="auto"></audio>
+    <audio id='Sound__TurnOn' src="assets/sound/turnOn.wav" type="audio/wav" preload="auto"></audio>
+    <audio id='Sound__Press' src="assets/sound/press.wav" type="audio/wav" preload="auto"></audio>
 
     <!-- CSS-->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="Css/css.css">
 
 
 
 </head>
 
 
-<body onload="mar()">
-    <div class="ocean__track">
-        <audio id="ocean_controls" controls autoplay>
+<body>
+    <div class="container_imagem">
+        <div class="ocean__track">
+            <audio id="ocean_controls" controls autoplay>
             <source src="assets/sound/ocean.mp3" id="ocean" type="audio/mp3" preload="auto" autoplay  >
                     
           </audio>
-    </div>
-    <div class="container_geral">
-        <div class="container_calculadora">
-
-            <div id="led" class="calculadora_"></div>
-            <div class="container_resultado">
-                <input type="text" class="col-12 input_resultado" id="result" placeholder="" disabled>
-            </div>
-
-
-            <div class="container container_botoes">
-                <div class="row">
-                    <input class="col botoes" type="button" value="ON/OFF" id="ON_OFF" onclick="power()">
-                    <input class="col botoes" type="button" value="CE" id="reset" onclick="reset()">
-                    <input class="col botoes" type="button" value="DELETE" id="del" onclick="del()">
-
-
-                </div>
-                <div class="row">
-                    <input class="col botoes" type="button" value="7" onclick="input('7')">
-                    <input class="col botoes" type="button" value="8" onclick="input('8')">
-                    <input class="col botoes" type="button" value="9" onclick="input('9')">
-                    <input class="col botoes" type="button" value="+" onclick="input('+')">
-
-                </div>
-                <div class="row">
-                    <input class="col botoes" type="button" value="4" onclick="input('4')">
-                    <input class="col botoes" type="button" value="5" onclick="input('5')">
-                    <input class="col botoes" type="button" value="6" onclick="input('6')">
-                    <input class="col botoes" type="button" value="-" onclick="input('-')">
-
-                </div>
-                <div class="row">
-                    <input class="col botoes" type="button" value="1" onclick="input('1')">
-                    <input class="col botoes" type="button" value="2" onclick="input('2')">
-                    <input class="col botoes" type="button" value="3" onclick="input('3')">
-                    <input class="col botoes" type="button" value="x" onclick="input('*')">
-
-                </div>
-                <div class="row">
-                    <input class="col botoes" type="button" value="0" onclick="input('0')">
-                    <input class="col botoes" type="button" value="." onclick="input('.')">
-                    <input class="col botoes" type="button" value="/" onclick="input('/')">
-                    <input class="col botoes botoes_mais " type="button" value="=" id="equals" onclick="calc()">
-                </div>
-
-            </div>
-
-
-
-
         </div>
+        <div class="container_geral">
+            <div class="container_calculadora">
 
+                <div id="led" class="calculadora_"></div>
+                <div class="container_resultado">
+                    <input type="text" class="col-12 input_resultado" id="result" placeholder="" disabled>
+                </div>
+
+
+                <div class="container container_botoes">
+                    <div class="row">
+                        <input class="col botoes" type="button" value="ON/OFF" id="ON_OFF" onclick="power()">
+                        <input class="col botoes" type="button" value="CE" id="reset" onclick="reset()">
+                        <input class="col botoes" type="button" value="DELETE" id="del" onclick="del()">
+
+
+                    </div>
+                    <div class="row">
+                        <input class="col botoes" type="button" value="7" onclick="input('7')">
+                        <input class="col botoes" type="button" value="8" onclick="input('8')">
+                        <input class="col botoes" type="button" value="9" onclick="input('9')">
+                        <input class="col botoes" type="button" value="+" onclick="input('+')">
+
+                    </div>
+                    <div class="row">
+                        <input class="col botoes" type="button" value="4" onclick="input('4')">
+                        <input class="col botoes" type="button" value="5" onclick="input('5')">
+                        <input class="col botoes" type="button" value="6" onclick="input('6')">
+                        <input class="col botoes" type="button" value="-" onclick="input('-')">
+
+                    </div>
+                    <div class="row">
+                        <input class="col botoes" type="button" value="1" onclick="input('1')">
+                        <input class="col botoes" type="button" value="2" onclick="input('2')">
+                        <input class="col botoes" type="button" value="3" onclick="input('3')">
+                        <input class="col botoes" type="button" value="x" onclick="input('*')">
+
+                    </div>
+                    <div class="row">
+                        <input class="col botoes" type="button" value="0" onclick="input('0')">
+                        <input class="col botoes" type="button" value="." onclick="input('.')">
+                        <input class="col botoes" type="button" value="/" onclick="input('/')">
+                        <input class="col botoes botoes_mais " type="button" value="=" id="equals" onclick="calc()">
+                    </div>
+
+                </div>
+
+
+
+
+            </div>
+
+            <footer>
+                DESENVOLVIDO POR <a href="https://github.com/ViniciusF-Pereira" target="_blank"><span> VINICIUS DE FREITAS</span></a></div>
+        </footer>
+    </div>
 </body>
-<footer>
-    DESENVOLVIDO POR <a href="https://github.com/ViniciusF-Pereira" target="_blank"><span> VINICIUS DE FREITAS</span></a></div>
-</footer>
+
+
 
 <!--JAVA SCRIPT-->
-<script  defer  src="./js/script.js"></script>
+<script src="Js/script.js"></script>
 
 </html>
